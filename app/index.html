@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>make.fun — the bounty board</title>
+</head>
+<body>
+<div id="app"></div>
+<script>
+// Boot: the shell loads alone; this brings in the stylesheet and the app.
+window.__shotReady = false;
+const s = document.createElement('link');
+s.rel = 'stylesheet';
+s.href = './style.css';
+document.head.appendChild(s);
+import('./main.js');
+</script>
+</body>
+</html>
